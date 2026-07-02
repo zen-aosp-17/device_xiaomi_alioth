@@ -67,6 +67,11 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 namespace_imports = [
+    'hardware/google/interfaces',
+    'hardware/google/pixel',
+    'hardware/google/pixel/pixelstats',
+    'hardware/google/pixel/power-libperfmgr',
+    'hardware/lineage/interfaces/power-libperfmgr',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8250',
     'vendor/qcom/opensource/display',
