@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Inherit Camera-related flags
 TARGET_USES_MIUI_CAMERA := true
@@ -35,3 +35,6 @@ USE_REALITY_ENGINE := true
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_EPPE := true
+ASCP_MAINTAINER := zenzer0s
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
